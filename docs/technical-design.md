@@ -18,6 +18,7 @@
 - **Build Tool**: Vite
 - **Testing**: Vitest for both client and server
 - **Deployment**: AWS SAM (Serverless Application Model) for cloud deployment
+- **Server Framework**: Fastify for Lambda-optimized API endpoints
 
 #### Frontend Technologies
 - **Game Map Rendering**: PixiJS (https://pixijs.com/)
