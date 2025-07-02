@@ -11,7 +11,7 @@
 
 #### Core Principles
 - This code should be run as inexpensively as possible: serverless app and pay-per-use AWS DynamoDB
-- Monorepo structure with `/client`, `/server`, and `/shared` root directories
+- Monorepo structure with `/client` and `/server` root directories
 
 #### Technology Stack
 - **Language**: TypeScript on both server and client
