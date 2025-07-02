@@ -7,17 +7,28 @@
 - Follow consistent indentation and formatting
 - Prefer explicit over implicit code
 
-### Architectual guidelines
-- This code should be run as inexpensively as possible: serverless app and pay-per-use AWS dynamo db
-- We're going to use typescript on the server and the client
-- For our hex map logic, we're going to use the Honeycomb library from here: https://abbekeultjes.nl/honeycomb
-- For our game map, we're going to use https://pixijs.com/
-- we're going to use Vite to build
-- we're going to use this monorepo with /client and /server and /shared root directories as the homes for those things
-- users will log into the site with an OAuth flow with discord
-- I want to use a single-table dynamodb design, using https://electrodb.dev/
-- we're going to use a client-polling pattern for getting updates from the server
-- we're going to use AWS SAM (Serverless Application Model) for cloud deployment of the lambdas, built front end, and the like
+### Architectural Guidelines
+
+#### Core Principles
+- This code should be run as inexpensively as possible: serverless app and pay-per-use AWS DynamoDB
+- Monorepo structure with `/client`, `/server`, and `/shared` root directories
+
+#### Technology Stack
+- **Language**: TypeScript on both server and client
+- **Build Tool**: Vite
+- **Testing**: Vitest for both client and server
+- **Deployment**: AWS SAM (Serverless Application Model) for cloud deployment
+
+#### Frontend Technologies
+- **Game Map Rendering**: PixiJS (https://pixijs.com/)
+- **Hex Map Logic**: Honeycomb library (https://abbekeultjes.nl/honeycomb)
+
+#### Backend & Data
+- **Database**: Single-table DynamoDB design using ElectroDB (https://electrodb.dev/)
+- **Real-time Updates**: Client-polling pattern for server updates
+
+#### Authentication & Integration
+- **User Authentication**: Discord OAuth flow
 
 ### Documentation
 - Include JSDoc/docstrings for functions and classes
