@@ -21,6 +21,9 @@
 - **Server Framework**: Fastify for Lambda-optimized API endpoints
 
 #### Frontend Technologies
+- **UI Framework**: Vue 3 with Vue Router
+- **Component Library**: Headless UI for accessible, unstyled components
+- **Styling**: Tailwind CSS for utility-first styling
 - **Game Map Rendering**: PixiJS (https://pixijs.com/)
 - **Hex Map Logic**: Honeycomb library (https://abbekeultjes.nl/honeycomb)
 

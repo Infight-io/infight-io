@@ -1,0 +1,29 @@
+{
+  "name": "infight-io",
+  "version": "0.1.0",
+  "description": "Infight.io - Discord-based multiplayer fighting game",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "build": "npm run build:server && npm run build:client",
+    "build:client": "npm run build --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "dev:client": "npm run dev --workspace=client",
+    "dev:server": "sam local start-api",
+    "test": "npm run test --workspaces",
+    "test:client": "npm run test --workspace=client",
+    "test:server": "npm run test --workspace=server",
+    "deploy": "npm run build && sam deploy",
+    "install:all": "npm install && npm install --workspaces"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
