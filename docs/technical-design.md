@@ -9,6 +9,15 @@
 
 ### Architectual guidelines
 - This code should be run as inexpensively as possible: serverless app and pay-per-use AWS dynamo db
+- We're going to use typescript on the server and the client
+- For our hex map logic, we're going to use the Honeycomb library from here: https://abbekeultjes.nl/honeycomb
+- For our game map, we're going to use https://pixijs.com/
+- we're going to use Vite to build
+- we're going to use this monorepo with /client and /server and /shared root directories as the homes for those things
+- users will log into the site with an OAuth flow with discord
+- I want to use a single-table dynamodb design, using https://electrodb.dev/
+- we're going to use a client-polling pattern for getting updates from the server
+- we're going to use AWS SAM (Serverless Application Model) for cloud deployment of the lambdas, built front end, and the like
 
 ### Documentation
 - Include JSDoc/docstrings for functions and classes
